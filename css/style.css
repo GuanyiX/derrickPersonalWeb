@@ -1,0 +1,278 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body header {
+  width: 100%;
+  font-size: 28px;
+  background-color: white;
+  font-weight: 600;
+  color: #7510f7;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+body header span {
+  display: block;
+}
+
+body header span.name {
+  width: 20%;
+  text-align: right;
+}
+
+body header span.funcs {
+  width: 60%;
+  line-height: 34px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body header span.funcs > a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+body header button {
+  font-family: "Montserrat", sans-serif;
+  color: #7510f7;
+  font-size: 14px;
+  margin-left: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #7510f7;
+  padding: 5px;
+}
+
+body main {
+  margin-top: 100px;
+  padding-top: 40px;
+}
+
+body main .intro .fintro {
+  font-family: "Michroma", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.125;
+  padding: 48px 24px 0px;
+  display: block;
+}
+
+body main .intro .sintro {
+  font-size: 1.25rem;
+  display: block;
+}
+
+body main .intro img {
+  margin-top: 80px;
+  width: 25%;
+}
+
+body main .summary {
+  background-color: #7510f7;
+  padding: 144px 24px 224px 24px;
+}
+
+body main .summary .summary-container h3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  font-family: "Michroma", sans-serif;
+}
+
+body main .summary .summary-container p {
+  display: block;
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+}
+
+body main .skills {
+  margin: -150px auto 0;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body main .skills .webskills {
+  background-color: white;
+  width: 456px;
+  border-radius: 10px;
+  margin: 0 50px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  flex-wrap: wrap;
+}
+
+body main .skills .webskills ul > li {
+  margin: 10px 0;
+}
+
+body main .skills .webskills:hover {
+  transform: translateY(-30px);
+}
+
+body main .skills .othskills {
+  background-color: white;
+  width: 456px;
+  border-radius: 10px;
+  margin: 0 50px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  flex-wrap: wrap;
+}
+
+body main .skills .othskills ul > li {
+  margin: 10px 0;
+}
+
+body main .skills .othskills:hover {
+  transform: translateY(-30px);
+}
+
+body main .edu-bg-wrapper {
+  width: 100%;
+  border-top: 1px solid #e6ecf8;
+  border-bottom: 1px solid #e6ecf8;
+  padding: 144px 24px;
+  box-sizing: border-box;
+}
+
+body main .edu-bg-wrapper .edu-title-container h3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+  font-family: "Michroma", sans-serif;
+}
+
+body main .edu-bg-wrapper .edu-title-container p {
+  display: block;
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+}
+
+body main .edu-bg-wrapper .edu-info-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body main .edu-bg-wrapper .edu-info-container > .flex-item {
+  width: 400px;
+}
+
+body main .edu-bg-wrapper .edu-info-container > .flex-item > img {
+  width: 100%;
+}
+
+body main .edu-bg-wrapper .edu-info-container > .flex-item:nth-child(2) {
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+body main .edu-bg-wrapper .edu-info-container > .flex-item:nth-child(3) {
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+body main .edu-bg-wrapper .edu-info-container > .flex-item:nth-child(4) {
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+body main .work-exp-wrapper {
+  background-color: #7510f7;
+  padding: 144px 24px;
+  color: white;
+}
+
+body main .work-exp-wrapper h3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  font-family: "Michroma", sans-serif;
+}
+
+body main .work-exp-wrapper .work-exp-container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  transform: translateX(100px);
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-left > .flex-item {
+  height: 30%;
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-left > .flex-item h4::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f017";
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-right {
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #e6ecf8;
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-right h2 {
+  margin-top: 0px;
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-right h2::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1ad";
+}
+
+body main .work-exp-wrapper .work-exp-container > .work-exp-right p::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2bb";
+  color: white;
+}
+
+body main .chat-wrapper {
+  width: 1200px;
+  height: 168px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  transform: translateY(-100px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body main .chat-wrapper .flex-item {
+  flex: 1 1 400px;
+  box-sizing: border-box;
+  margin: auto 0px;
+}
+
+body main .chat-wrapper .flex-item:first-child {
+  font-size: 30px;
+}
+
+body main .chat-wrapper .flex-item:last-child > button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  background-color: black;
+  border: 1px solid #7510F7;
+  padding: 1em 1.25em;
+  border-radius: 290486px;
+}
