@@ -39,6 +39,10 @@ body header span.funcs > a {
   margin: 0 10px;
 }
 
+body header span.funcs > a:hover {
+  font-weight: 600;
+}
+
 body header button {
   font-family: "Montserrat", sans-serif;
   color: #7510f7;
@@ -48,6 +52,11 @@ body header button {
   border-radius: 10px;
   border: 1px solid #7510f7;
   padding: 5px;
+}
+
+body header button:hover {
+  background-color: #7510f7;
+  color: white;
 }
 
 body main {
@@ -165,7 +174,7 @@ body main .edu-bg-wrapper .edu-title-container p {
 }
 
 body main .edu-bg-wrapper .edu-info-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -275,4 +284,8 @@ body main .chat-wrapper .flex-item:last-child > button {
   border: 1px solid #7510F7;
   padding: 1em 1.25em;
   border-radius: 290486px;
+}
+
+body main .chat-wrapper .flex-item:last-child > button:hover {
+  background-color: #7510f7;
 }
