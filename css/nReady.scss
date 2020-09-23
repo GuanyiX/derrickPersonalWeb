@@ -1,0 +1,45 @@
+$main-font: 'Montserrat', sans-serif;
+$theme-color: #7510f7;
+
+// Set padding top to every section
+@mixin pd-top-style{
+    padding-top: 100px;
+
+    @media screen and (max-width: 800px){
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-top: 40px;
+    }
+}
+
+// Set padding bottom to every section
+@mixin pd-bottom-style{
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 800px){
+        padding-bottom: 120px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-bottom: 80px;
+    }
+}
+
+
+main{
+    margin-top: 100px;
+    @include pd-top-style;
+    @include pd-bottom-style;
+    height: 500px;
+
+    @media screen and (max-width: 500px){
+        font-size: 0.6rem;
+    }
+
+    h1{
+        text-align: center;
+        line-height: 500px;
+    }
+}

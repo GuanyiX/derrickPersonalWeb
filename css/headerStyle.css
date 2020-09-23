@@ -60,10 +60,6 @@ body header .header-wrapper .flex-item:nth-child(2) span {
   vertical-align: -10px;
 }
 
-body header .header-wrapper .flex-item:nth-child(2) span:first-child {
-  font-weight: 600;
-}
-
 @media only screen and (max-width: 800px) {
   body header .header-wrapper .flex-item:nth-child(2) span {
     display: none;

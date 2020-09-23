@@ -1,0 +1,297 @@
+main {
+  margin-top: 100px;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding-top: 20px;
+  }
+}
+
+main .experience-wrapper h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main .experience-wrapper h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .experience-wrapper h3 {
+    font-size: 1.2rem;
+  }
+}
+
+main .experience-wrapper .study-exp .web-container {
+  background-color: #7510f7;
+  margin: 50px auto;
+  width: 60%;
+  height: 36%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  main .experience-wrapper .study-exp .web-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .experience-wrapper .study-exp .web-container {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .web-container {
+    flex-direction: column;
+  }
+}
+
+main .experience-wrapper .study-exp .web-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+}
+
+main .experience-wrapper .study-exp .web-container img {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .web-container img {
+    width: 100%;
+  }
+}
+
+main .experience-wrapper .study-exp .web-container .web-info {
+  margin: auto 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .web-container .web-info {
+    text-align: center;
+  }
+}
+
+main .experience-wrapper .study-exp .web-container .web-info h2 {
+  color: white;
+}
+
+main .experience-wrapper .study-exp .gomoku-container {
+  margin: 50px auto;
+  width: 60%;
+  height: 36%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #7510f7;
+  text-align: right;
+  border: 1px solid #7510f7;
+}
+
+@media screen and (max-width: 1200px) {
+  main .experience-wrapper .study-exp .gomoku-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .experience-wrapper .study-exp .gomoku-container {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .gomoku-container {
+    flex-direction: column;
+  }
+}
+
+main .experience-wrapper .study-exp .gomoku-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+}
+
+main .experience-wrapper .study-exp .gomoku-container img {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .gomoku-container img {
+    width: 100%;
+  }
+}
+
+main .experience-wrapper .study-exp .gomoku-container .gomoku-info {
+  margin: auto 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .gomoku-container .gomoku-info {
+    display: none;
+  }
+}
+
+main .experience-wrapper .study-exp .gomoku-container .gomoku-info h2 {
+  color: #7510f7;
+}
+
+main .experience-wrapper .study-exp .gomoku-container .hd-gomoku-info {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .gomoku-container .hd-gomoku-info {
+    display: block;
+  }
+}
+
+main .experience-wrapper .study-exp .gomoku-container .hd-gomoku-info h2 {
+  color: #7510f7;
+}
+
+main .experience-wrapper .study-exp .ml-container {
+  background-color: #7510f7;
+  margin: 50px auto;
+  width: 60%;
+  height: 36%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  main .experience-wrapper .study-exp .ml-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .experience-wrapper .study-exp .ml-container {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .ml-container {
+    flex-direction: column;
+  }
+}
+
+main .experience-wrapper .study-exp .ml-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+}
+
+main .experience-wrapper .study-exp .ml-container img {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .ml-container img {
+    width: 100%;
+  }
+}
+
+main .experience-wrapper .study-exp .ml-container .ml-info {
+  margin: auto 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .ml-container .ml-info {
+    text-align: center;
+  }
+}
+
+main .experience-wrapper .study-exp .ml-container .ml-info h2 {
+  color: white;
+}
+
+main .experience-wrapper .study-exp .arduino-container {
+  margin: 50px auto;
+  width: 60%;
+  height: 36%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #7510f7;
+  text-align: right;
+  border: 1px solid #7510f7;
+}
+
+@media screen and (max-width: 1200px) {
+  main .experience-wrapper .study-exp .arduino-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .experience-wrapper .study-exp .arduino-container {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .arduino-container {
+    flex-direction: column;
+  }
+}
+
+main .experience-wrapper .study-exp .arduino-container h2::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+}
+
+main .experience-wrapper .study-exp .arduino-container img {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .arduino-container img {
+    width: 100%;
+  }
+}
+
+main .experience-wrapper .study-exp .arduino-container .arduino-info {
+  margin: auto 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .arduino-container .arduino-info {
+    display: none;
+  }
+}
+
+main .experience-wrapper .study-exp .arduino-container .arduino-info h2 {
+  color: #7510f7;
+}
+
+main .experience-wrapper .study-exp .arduino-container .hd-arduino-info {
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  main .experience-wrapper .study-exp .arduino-container .hd-arduino-info {
+    display: block;
+  }
+}
+
+main .experience-wrapper .study-exp .arduino-container .hd-arduino-info h2 {
+  color: #7510f7;
+}

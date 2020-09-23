@@ -1,0 +1,175 @@
+$main-font: 'Montserrat', sans-serif;
+$theme-color: #7510f7;
+$bs-width: 60%;
+
+// Set padding top to every section
+@mixin pd-top-style{
+    padding-top: 60px;
+
+    @media screen and (max-width: 800px){
+        padding-top: 40px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-top: 20px;
+    }
+}
+
+@mixin projects-style{
+    margin: 50px auto;
+    width: $bs-width;
+    height: $bs-width*0.6;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1200px){
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 0.6rem;
+    }
+
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+
+    h2::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f101";
+    }
+
+    img{
+        width: 40%; 
+
+        @media screen and (max-width: 1000px){
+            width: 100%;
+        }
+    }
+}
+
+main{
+    margin-top: 100px;
+    @include pd-top-style;
+    
+    .experience-wrapper{
+        h3{
+            text-align: center;
+            font-size: 3rem;
+
+            @media screen and (max-width: 1200px){
+                font-size: 2rem;
+            }
+
+            @media screen and (max-width: 768px){
+                font-size: 1.2rem;
+            }
+        }
+
+        .study-exp{
+
+            .web-container{
+                background-color: $theme-color;
+                @include projects-style;
+                color: white;
+
+                .web-info{
+                    margin: auto 20px;
+
+                    @media screen and (max-width: 1000px){
+                        text-align: center;
+                    }
+
+                    h2{
+                        color: white;
+                    }
+                }
+            }
+
+            .gomoku-container{
+                @include projects-style;
+                color: $theme-color;
+                text-align: right;
+                border: 1px solid $theme-color;
+
+                .gomoku-info{
+                    margin: auto 20px;
+
+                    @media screen and (max-width: 1000px){
+                        display: none;
+                    }
+
+                    h2{
+                        color: $theme-color;
+                    }
+                }
+
+                .hd-gomoku-info{
+                    display: none;
+                    text-align: center;
+
+                    @media screen and (max-width: 1000px){
+                        display: block;
+                    }
+
+                    h2{
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            .ml-container{
+                background-color: $theme-color;
+                @include projects-style;
+                color: white;
+
+                .ml-info{
+                    margin: auto 20px;
+
+                    @media screen and (max-width: 1000px){
+                        text-align: center;
+                    }
+
+                    h2{
+                        color: white;
+                    }
+                }
+            }
+
+            .arduino-container{
+                @include projects-style;
+                color: $theme-color;
+                text-align: right;
+                border: 1px solid $theme-color;
+
+                .arduino-info{
+                    margin: auto 20px;
+
+                    @media screen and (max-width: 1000px){
+                        display: none;
+                    }
+
+                    h2{
+                        color: $theme-color;
+                    }
+                }
+
+                .hd-arduino-info{
+                    display: none;
+                    text-align: center;
+
+                    @media screen and (max-width: 1000px){
+                        display: block;
+                    }
+
+                    h2{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
