@@ -1,0 +1,69 @@
+footer {
+  background-color: #7510f7;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+footer h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1000px) {
+  footer h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  footer h3 {
+    font-size: 0.5rem;
+  }
+}
+
+footer p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  footer p {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,66 @@
+$main-font: 'Montserrat', sans-serif;
+$theme-color: #7510f7;
+
+// Input is font size which changes based on the device
+@mixin h3-style($font-num){
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: $font-num; 
+
+    @media screen and (max-width: 1000px){
+        font-size: $font-num*0.8;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: $font-num*0.6;
+    }
+
+    @media screen and (max-width: 350px){
+        font-size: $font-num*0.4;
+    }
+}
+
+@mixin p-style($font-num){
+    text-align: center;
+    font-family: $main-font;
+    font-size: $font-num;
+
+    @media screen and (max-width: 1000px){
+        font-size: $font-num*0.8;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: $font-num*0.6;
+    }
+
+    @media screen and (max-width: 350px){
+        font-size: $font-num*0.5;
+    }
+}
+
+footer{
+    background-color: $theme-color;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 800px){
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    
+    h3{
+        @include h3-style(1.25rem);
+    }
+
+    p{
+        @include p-style(1rem);
+    }
+}

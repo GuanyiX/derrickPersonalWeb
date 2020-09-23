@@ -1,0 +1,118 @@
+$theme-color: #7510f7;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    a{
+        text-decoration: none;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        color: $theme-color;
+        z-index: 999;
+
+        .header-wrapper{
+            display: flex;
+            background-color: white;
+            
+            .flex-item{
+                flex-basis: 25%;
+                flex-shrink: 0;
+                margin: 10px;
+                text-align: right;
+
+                &:nth-child(1){  
+                    font-size: 2rem;
+                    font-weight: 600;
+
+                    @media only screen and (max-width: 1000px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        font-size: 1rem;
+                    }
+                }
+        
+                &:nth-child(2){
+                    flex-basis: 60%;
+                    font-size: 18px;
+
+                    @media only screen and (max-width: 400px) {
+                        flex-basis: 50%;
+                    }
+
+                    span{
+                        margin: 10px;
+                        vertical-align: -10px;
+
+                        &:first-child{
+                            font-weight: 600;
+                        }
+
+                        @media only screen and (max-width: 800px) {
+                            display: none;
+                        }
+
+                        a:hover{
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                &:nth-child(3){
+                    display: none;
+
+                    @media only screen and (max-width: 800px) {
+                        display: block;
+                        text-align: left; 
+
+                        i{
+                            vertical-align: -10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hidden-nav-wrapper{
+            display: none;
+
+            @media only screen and (max-width: 800px){
+                display: flex;
+                justify-content: flex-end;
+                visibility: hidden;
+    
+                .hidden-nav-column{
+                    background-color: $theme-color;
+                    flex: 0 1 20%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 20px;
+    
+                    .flex-item{
+                        text-align: center;
+                        margin: 10px auto;
+
+                        & > a{
+                            color: white;
+                            @media only screen and (max-width: 400px){
+                                font-size: 12px;
+                            }
+
+                            &:hover{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+
+

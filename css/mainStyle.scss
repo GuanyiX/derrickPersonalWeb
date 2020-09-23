@@ -1,0 +1,458 @@
+$main-font: 'Montserrat', sans-serif;
+$theme-color: #7510f7;
+
+@function img-left($img-width){
+    @return (100%-$img-width)/2;
+}
+
+// Input is font size which changes based on the device
+@mixin h3-style($font-num){
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: $font-num; 
+
+    @media screen and (max-width: 1000px){
+        font-size: $font-num*0.8;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: $font-num*0.6;
+    }
+
+    @media screen and (max-width: 350px){
+        font-size: $font-num*0.4;
+    }
+}
+
+// Set padding top to every section
+@mixin pd-top-style{
+    padding-top: 100px;
+
+    @media screen and (max-width: 800px){
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-top: 40px;
+    }
+}
+
+// Set padding bottom to every section
+@mixin pd-bottom-style{
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 800px){
+        padding-bottom: 120px;
+    }
+
+    @media screen and (max-width: 600px){
+        padding-bottom: 80px;
+    }
+}
+
+@mixin p-style($font-num){
+    text-align: center;
+    font-family: $main-font;
+    font-size: $font-num;
+
+    @media screen and (max-width: 1000px){
+        font-size: $font-num*0.8;
+    }
+
+    @media screen and (max-width: 600px){
+        font-size: $font-num*0.6;
+    }
+
+    @media screen and (max-width: 350px){
+        font-size: $font-num*0.5;
+    }
+}
+
+.pre-intro{
+    width: 100%;
+    margin-top: 100px;
+    @include pd-top-style;
+
+    h3{
+        @include h3-style(2rem);
+    }
+
+    p{
+        @include p-style(1.25rem);
+    }
+
+    img{
+        width: 30%;
+        position: relative;
+        left: img-left(30%);
+
+        @media screen and (max-width: 1200px){
+            width: 35%;
+            left: img-left(35%);
+        }
+
+        @media screen and (max-width: 1000px){
+            width: 40%;
+            left: img-left(40%);
+        }
+
+        @media screen and (max-width: 800px){
+            width: 45%;
+            left: img-left(45%);
+        }
+
+        @media screen and (max-width: 600px){
+            width: 50%;
+            left: img-left(50%);
+        }
+
+        @media screen and (max-width: 400px){
+            width: 60%;
+            left: img-left(60%);
+        }
+    }
+}
+
+.intro{ 
+    background-color: $theme-color;
+    color: white;
+    @include pd-top-style;
+    @include pd-bottom-style;
+
+    h3{
+        @include h3-style(2rem);
+    }
+
+    p{
+        @include p-style(1.25rem); 
+        margin: 0;
+    }
+}
+
+.skills{
+    
+    .skills-container{
+        display: flex;
+        margin: -100px auto 0;
+        justify-content: center;
+
+        @media screen and (max-width: 1000px){
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 600px){
+            margin: -50px auto;
+        }
+
+        padding-bottom: 50px;
+        border-bottom: 1px solid #e6ecf8;
+
+        .flex-item{
+            width: 20%;
+            background-color: white;
+            flex: 0 1 auto;
+            margin: 0 50px;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+
+            @media screen and (max-width: 1000px){
+                width: 50%;
+                margin: 0 auto;
+                padding: 30px;
+            }
+
+            @media screen and (max-width: 600px){
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+
+            img{
+                display: block;
+                margin: 0 auto 50px;
+            }
+
+            h3{
+                @include h3-style(1.5rem);
+
+                &:nth-child(4){
+                    @include h3-style(1.2rem);
+                    color: $theme-color;
+                    margin: 50px auto 20px;
+                }
+
+            }
+
+            p{
+                @include p-style(1.25rem);
+            }
+
+            ul > li{
+                font-size: 1rem;
+                line-height: 2rem;
+
+                @media screen and (max-width: 1000px){
+                    font-size: 1rem*0.8;
+                    line-height: 2rem*0.8;
+                }
+            
+                @media screen and (max-width: 600px){
+                    font-size: 1rem*0.6;
+                    line-height: 2rem*0.6;
+                }
+            
+                @media screen and (max-width: 350px){
+                    font-size: 1rem*0.5;
+                    line-height: 2rem*0.5;
+                }
+            }
+        }
+    }
+}
+
+$bg-img-width: 300px;
+
+@mixin bg-img-style($width) {
+    flex: 0 1 $width;
+    height: $width;
+    border: 2px solid $theme-color;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@mixin bg-simg-style{
+    @media screen and (max-width: 1000px){
+        width: $bg-img-width - 50px;
+        height: $bg-img-width - 50px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 800px){
+        width: $bg-img-width - 100px;
+        height: $bg-img-width - 100px;
+    }
+
+    @media screen and (max-width: 600px){
+        width: $bg-img-width - 150px;
+        height: $bg-img-width - 150px;
+    }
+}
+
+
+.edu{
+
+    .edu-wrapper{
+        margin-top: 100px;
+        border-bottom: 1px solid #e6ecf8;
+
+        h3{
+            @include h3-style(2rem);
+            margin-bottom: 50px;
+        }
+
+        .uni-container{
+            display: flex;
+            justify-content: center;
+
+            .syd-uni-img{
+                @include bg-img-style($bg-img-width);
+                display: block;
+                background-image: url("./../image/usyd.jpg");
+                transform: translateX(0.25*$bg-img-width);
+
+                @media screen and (max-width: 1000px){
+                    flex-basis: $bg-img-width - 50px;
+                    height: $bg-img-width - 50px;
+                    transform: translateX(0);
+                }
+
+                @media screen and (max-width: 800px){
+                    flex-basis: $bg-img-width - 100px;
+                    height: $bg-img-width - 100px;
+                }
+
+                @media screen and (max-width: 600px){
+                    flex-basis: $bg-img-width - 150px;
+                    height: $bg-img-width - 150px;
+                }
+            }
+
+            .syd-uni-info{
+                flex: 0 1 $bg-img-width*2;
+                border-radius: 0 $bg-img-width*0.5 $bg-img-width*0.5 0;
+                transform: translateX(-0.25*$bg-img-width);
+                border: 2px solid $theme-color;
+                box-sizing: border-box;
+                padding-right: $bg-img-width*0.5;
+                padding-top: $bg-img-width*0.1;
+                text-align: right;
+                z-index: -1;
+
+                @media screen and (max-width: 1000px){
+                    display: none;
+                }
+
+                h4{
+                    color: $theme-color;
+                    font-size: 1.25rem;
+                    margin-bottom: $bg-img-width*0.2;
+                }
+            }   
+        }
+
+        .hd-syd-uni-info{
+            display: none;
+
+            @media screen and (max-width: 1000px){
+                display: block;
+
+                h4{
+                    color: $theme-color;
+                    font-size: 1.25rem;
+                    display: block;
+                    text-align: center;
+
+                    @media screen and (max-width: 800px){
+                        font-size: 1rem;
+                    }
+
+                    @media screen and (max-width: 600px){
+                        font-size: 0.75rem;
+                    }
+    
+                }
+
+                p{
+                    display: block;
+                    text-align: center;
+
+                    @media screen and (max-width: 800px){
+                        font-size: 0.8rem;
+                    }
+
+                    @media screen and (max-width: 600px){
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        } 
+    }
+
+    .oth-col-wrapper{
+        display: flex;
+        justify-content: center;
+        margin: $bg-img-width*0.4 0;
+
+        @media screen and (max-width: 1000px){
+            flex-direction: column;
+        }
+
+        .flex-item{
+            margin: 0 $bg-img-width*0.2;
+            flex: 0 1 $bg-img-width*0.6;
+            margin-bottom: $bg-img-width*0.2;
+
+            .flex-item-img-1{
+                @include bg-img-style($bg-img-width*0.6);
+                background-image: url(./../image/naati.png);
+                @include bg-simg-style;
+
+            }
+
+            .flex-item-img-2{
+                @include bg-img-style($bg-img-width*0.6);
+                background-image: url(./../image/atmc-logo-1.png);
+                @include bg-simg-style;
+            }
+
+            .flex-item-img-3{
+                @include bg-img-style($bg-img-width*0.6);
+                background-image: url(./../image/jr.png);
+                @include bg-simg-style;
+            }
+
+            h4{
+                text-align: center;
+                color: $theme-color;
+            }
+
+            p{
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+.chat-box{
+    background-color: $theme-color;
+
+    .chat-wrapper{
+        width: 70%;
+        background-color: black;
+        margin: 0 auto;
+        border-radius: 12px;
+        display: flex;
+        color: white;
+        padding: 50px 0;
+        transform: translateY(-100px);
+
+        @media screen and (max-width: 1000px){
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .flex-item{
+            flex: 1 0 30%;
+            box-sizing: border-box;
+
+            &:first-child{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 800;
+
+                @media screen and (max-width: 1200px){
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                }
+            }
+
+            &:nth-child(2){
+                display: block;
+                margin: auto 5%;
+            }
+
+            &:nth-child(3){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button{
+                    background-color: transparent;
+                    font-family: $main-font;
+                    border: 2px solid $theme-color;
+                    padding: 25px 40px;
+                    font-size: 1.25rem;
+
+                    @media screen and (max-width: 800px){
+                        padding: 15px 20px;
+                        font-size: 1rem;
+
+                    }
+
+                    border-radius: 290486px;
+                    color: white;
+
+                    &:hover{
+                        color: white;
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
