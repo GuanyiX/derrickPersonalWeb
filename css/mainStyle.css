@@ -671,6 +671,7 @@
 .chat-box .chat-wrapper .flex-item:nth-child(2) {
   display: block;
   margin: auto 5%;
+  text-align: center;
 }
 
 .chat-box .chat-wrapper .flex-item:nth-child(3) {
